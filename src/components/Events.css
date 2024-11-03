@@ -1,0 +1,16 @@
+.events {
+    padding: 30px 20px;
+}
+
+.events h2 {
+    font-size: 26px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.events p {
+    font-size: 18px;
+    color: #4a90e2;
+    font-weight: bold;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}

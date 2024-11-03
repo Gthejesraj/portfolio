@@ -1,0 +1,66 @@
+.experience {
+    padding: 40px 20px;
+}
+
+.experience h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.experience-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.experience-item h3 {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    font-size: 16px;
+    color: #555555;
+}
+
+/* Experience items */
+.experience-item {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    /* Hide overflow for smooth reveal */
+    cursor: pointer;
+    /* Change cursor on hover */
+}
+
+.experience-item:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+/* Initially hide the description */
+.experience-content {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Reveal the description on hover */
+.experience-item:hover .experience-content {
+    max-height: 200px;
+    /* Adjust based on expected content length */
+    opacity: 1;
+}
